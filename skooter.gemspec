@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.version     = Skooter::VERSION
   s.authors     = ["Juan Trejo"]
   s.email       = ["juan@dataconsulta.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Skooter."
+  s.homepage    = "https://github.com/KandFConsulting/skooter"
+  s.summary     = "This engine/gem helps you to automatize process to collect data from ODK Collect using your own server to serve and collect the data directly from de device without pass through another intermediate"
   s.description = "Aplicación intermediaria entre ODK y un proyecto rails."
   s.license     = "MIT"
 
