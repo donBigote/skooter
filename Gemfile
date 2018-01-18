@@ -12,4 +12,4 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-gem "pg", "~> 0.18"
+gem 'pg', '~> 0.18'

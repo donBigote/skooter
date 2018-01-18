@@ -1,4 +1,4 @@
-require "skooter/engine"
+require 'skooter/engine'
 require 'skooter/loader'
 
 module Skooter
