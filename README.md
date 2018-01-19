@@ -29,6 +29,6 @@ The gem is available according to an End-User License Agreement (EULA) that can 
 
 If you have been granted permission to use this technology, then you have signed an agreement that details how the software can and cannot be used. The following restriction will always apply to an EULA of this software.
 
-Restrictions
+#### Restrictions
 You agree not to, and you will not permit others to:
 a) license, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose or otherwise commercially exploit the Application or make the Application available to any third party.
