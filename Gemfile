@@ -12,5 +12,6 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-# gem 'pg', '~> 0.18'
+gem 'pg', '~> 0.18'
+gem 'pry-rails', group: [:development, :test]
 # gem 'simple_form'

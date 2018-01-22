@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+table { border-collapse:collapse; }
+
+table thead th {
+  border: 1px solid #000;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+table tbody tr td {
+  border: 1px solid #000;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+ /* table tbody tr { border-bottom: 1px solid #000; } */

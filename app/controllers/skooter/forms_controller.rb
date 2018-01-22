@@ -6,7 +6,7 @@ module Skooter
 
     # GET /forms
     def index
-      @forms = Form.all
+      @forms = Form.order(:id)
     end
 
     # GET /forms/1
@@ -56,7 +56,7 @@ module Skooter
 
       # Only allow a trusted parameter "white list" through.
       def form_params
-        params.require(:form).permit(:name)
+        params.require(:form).permit(:name, :document, :description)
       end
   end
 end

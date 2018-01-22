@@ -1,22 +1,6 @@
-<%= form_with(model: form, local: true) do |form| %>
-  <% if form.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(form.errors.count, "error") %> prohibited this form from being saved:</h2>
-
-      <ul>
-      <% form.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :form_name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= simple_form_for @form do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :document, as: :file %>
+  <%= f.button :submit %>
 <% end %>
