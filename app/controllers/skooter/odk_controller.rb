@@ -1,4 +1,4 @@
-require_dependency "skooter/application_controller"
+require_dependency 'skooter/application_controller'
 
 module Skooter
   class OdkController < ApplicationController
@@ -6,7 +6,7 @@ module Skooter
       set_header
       @forms = Skooter::Form.order(:name)
       respond_to do |format|
-        format.xml { render "index.xml" }
+        format.xml { render 'index.xml' }
       end
     end
 
@@ -19,9 +19,10 @@ module Skooter
     end
 
     private
+
       def set_header
-        response.headers["X-OpenRosa-Version"] = "1"
-        response.headers["Content-Type"] = "text/xml; charset=utf-8"
+        response.headers['X-OpenRosa-Version'] = '1'
+        response.headers['Content-Type'] = 'text/xml; charset=utf-8'
       end
   end
 end
