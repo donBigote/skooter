@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
-class SkooterCreateForms < ActiveRecord::Migration<%= migration_version %>
+# This migration comes from skooter (originally 20180122173131)
+class CreateSkooterForms < ActiveRecord::Migration[5.1]
   def change
     create_table :skooter_forms do |t|
       t.string :name
