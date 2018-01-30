@@ -3,7 +3,7 @@
 
 # In this section we'll set defaults for paperclip
 
-paperclip_set = {
+paperclip_defaults = {
   storage: :s3,
   s3_credentials: {
     bucket: ENV.fetch('S3_BUCKET_NAME'),
@@ -12,7 +12,7 @@ paperclip_set = {
     s3_region: ENV.fetch('AWS_REGION')
   }
 }
-Rails.application.config.paperclip_defaults = paperclip_set
+Rails.application.config.paperclip_defaults = paperclip_defaults
 
 skooter_config_path = "#{Rails.root}/config/skooter_config.yml"
 SKOOTER_CONFIG = YAML.load_file(skooter_config_path)[Rails.env]
