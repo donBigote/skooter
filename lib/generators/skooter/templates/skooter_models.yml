@@ -1,0 +1,4 @@
+development:
+  skooter_models:
+    - 'photo'
+    - 'pumping_lines'
