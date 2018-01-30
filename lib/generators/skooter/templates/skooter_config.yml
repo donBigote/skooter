@@ -2,4 +2,4 @@ development:
   skooter_models:
     - 'photo'
     - 'pumping_lines'
-  paperclip_storage: :s3
+  PAPERCLIP_STORAGE: :filesystem
