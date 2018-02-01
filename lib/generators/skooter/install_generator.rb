@@ -22,15 +22,17 @@ module Skooter
 
       def cors_code
 <<RUBY
-  # Rails 5
-  # this config area works with rack-cors gem, and allow requests to the API by
-  # any client provided that the requests has to be requested by the ElectronApp
-  config.middleware.insert_before 0, Rack::Cors do
-    allow do
-      origins "*"
-      resource "*", headers: :any, methods: [:get, :post, :options]
+    # Rails 5
+    # this config area works with rack-cors gem, and allow requests to the API
+    #  by any client provided that the requests has to be requested by the
+    # ElectronApp
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options]
+      end
     end
-  end
+
 RUBY
       end
 

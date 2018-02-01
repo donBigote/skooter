@@ -1,5 +1,5 @@
 development:
   skooter_models:
-    - 'photo'
-    - 'pumping_lines'
+    - 'foo'
+    - 'bar'
   PAPERCLIP_STORAGE: :filesystem
