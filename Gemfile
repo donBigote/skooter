@@ -15,4 +15,4 @@ gemspec
 gem 'pg', '~> 0.18'
 gem 'pry-rails', group: [:development, :test]
 gem 'dotenv-rails', groups: [:development, :test]
-# gem 'simple_form'
+# gem 'rack-cors', require: "rack/cors"

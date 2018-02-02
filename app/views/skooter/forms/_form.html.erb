@@ -1,6 +1,7 @@
 <%= simple_form_for @form do |f| %>
   <%= f.input :name %>
   <%= f.input :description %>
+  <%= f.input :model_source, as: :select, collection: SKOOTER_CONFIG['SKOOTER_MODELS'] %>
   <%= f.input :document, as: :file %>
   <%= f.button :submit %>
 <% end %>
