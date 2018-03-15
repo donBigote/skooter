@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'haml-rails', '~> 1.0'
   s.add_dependency 'paperclip'
   s.add_dependency 'rack-cors' # , require: "rack/cors"
-  s.add_dependency 'rails', '~> 5.1.2'
+  # s.add_dependency 'rails', '~> 5.1.2'
+  s.add_dependency 'rails', '>= 5.1.2'
   s.add_dependency 'simple_form'
 
   # s.add_development_dependency 'pg'
