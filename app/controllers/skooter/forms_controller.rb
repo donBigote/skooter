@@ -24,6 +24,7 @@ module Skooter
 
     # POST /forms
     def create
+      logger.debug "======> here are the params: #{params}"
       @form = Form.new(form_params)
 
       if @form.save
@@ -56,7 +57,7 @@ module Skooter
 
       # Only allow a trusted parameter "white list" through.
       def form_params
-        params.require(:form).permit(:name, :document, :description)
+        params.require(:form).permit(:name, :document, :description, :model_source)
       end
   end
 end
