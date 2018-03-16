@@ -2,17 +2,12 @@
 <xforms xmlns="http://openrosa.org/xforms/xformsList">
   <% @forms.each do |file| %>
   <xform>
-    <!-- <formID>http://<%= ENV['HOSTNAME'] %>/forms/<%= file.id %></formID> -->
     <formID><%= file.id %></formID>
     <name><%= file.name %></name>
-    <!-- <version><%#= Random.rand.to_s[2..11].to_i %></version> -->
     <version><%= file.updated_at.to_i %></version>
     <hash>md5:c28fc778a9291672badee04ac880a05d</hash>
     <descriptionText><%= file.description %></descriptionText>
-    <downloadUrl>
-      <!-- http://<%#= ENV['HOSTNAME'] %>/forms/<%#= file.id %> -->
-      https://progis.herokuapp.com/skooter/odk/<%= file.id %>
-    </downloadUrl>
+    <downloadUrl>https://progis.herokuapp.com/skooter/odk/<%= file.id %></downloadUrl>
   </xform>
   <% end %>
 </xforms>
