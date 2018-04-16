@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency 'aws-sdk', '~> 2'
+  s.add_dependency 'aws-sdk', '~> 3'
   s.add_dependency 'haml-rails', '~> 1.0'
   s.add_dependency 'paperclip'
   s.add_dependency 'rack-cors' # , require: "rack/cors"
