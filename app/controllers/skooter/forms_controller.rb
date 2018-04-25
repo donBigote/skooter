@@ -24,7 +24,6 @@ module Skooter
 
     # POST /forms
     def create
-      logger.debug "======> here are the params: #{params}"
       @form = Form.new(form_params)
 
       if @form.save
