@@ -1,4 +1,4 @@
-module Skooter::BaseControllerActions
+module Skooter::BaseOdkControllerActions
   extend ActiveSupport::Concern
 
   def index
@@ -20,18 +20,19 @@ module Skooter::BaseControllerActions
   def submissions
     if request.method == 'POST'
       hash = Crack::XML.parse(File.read(params[:xml_submission_file].path))
-      model = set_model(hash)
+      # put your logic code here like the below example
+      # model = set_model(hash)
 
       if model != 'device_id'
-        object = prepare_object(model, hash)
-        form = "Olpe::#{model.singularize.camelize}".constantize.new(object)
-        respond_to do |format|
-          if form.save
-            format.xml { render status: 201 }
-          else
-            format.xml { render status: form.errors.messages }
-          end
-        end
+      #   object = prepare_object(model, hash)
+      #   form = "Olpe::#{model.singularize.camelize}".constantize.new(object)
+      #   respond_to do |format|
+      #     if form.save
+      #       format.xml { render status: 201 }
+      #     else
+      #       format.xml { render status: form.errors.messages }
+      #     end
+      #   end
       else
         render status: 201
       end

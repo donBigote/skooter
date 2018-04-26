@@ -9,7 +9,7 @@ module Skooter
     ##
     ## Github Gist: https://gist.github.com/trejo08/11df06b3c6ff8fa26c610447005b721f
 
-    include Skooter::BaseControllerActions
+    include Skooter::BaseOdkControllerActions
     before_action :set_header, only: %i[index submissions]
 
     private
