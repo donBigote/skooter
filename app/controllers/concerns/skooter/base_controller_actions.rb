@@ -2,9 +2,6 @@ module Skooter::BaseControllerActions
   extend ActiveSupport::Concern
 
   def index
-    logger.debug "parameters: #{params.inspect}"
-    logger.debug "environment #{ENV['HTTP_AUTHORIZATION'].inspect}"
-    logger.debug "======> entro a la accion index"
     @forms = Skooter::Form.order(:name)
     respond_to do |format|
       format.xml { render 'index.xml' }
