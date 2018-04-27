@@ -8,16 +8,7 @@ module Skooter
     ##
     ##
     ## Github Gist: https://gist.github.com/trejo08/11df06b3c6ff8fa26c610447005b721f
-
     include Skooter::BaseOdkControllerActions
-    before_action :set_header, only: %i[index submissions]
-
-    private
-
-      def set_header
-        response.headers['X-OpenRosa-Version'] = '1'
-        response.headers['Content-Type'] = 'text/xml; charset=utf-8'
-      end
 
     #   def set_model(raw_params)
     #     model = ''
