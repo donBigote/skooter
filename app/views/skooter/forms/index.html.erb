@@ -12,13 +12,17 @@
   </thead>
 
   <tbody>
-    <% forms.each do |form| %>
+    <% forms.each do |xml_form| %>
       <tr>
-        <td><%= form.name %></td>
-        <td><%= form.document_file_name %></td>
-        <td><%= link_to 'Show', form %></td>
-        <td><%= link_to 'Edit', edit_form_path(form) %></td>
-        <td><%= link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= xml_form.name %></td>
+        <td><%= xml_form.document_file_name %></td>
+        <td><%= link_to 'Show', form_path(xml_form) %></td>
+        <td><%= link_to 'Edit', edit_form_path(xml_form) %></td>
+        <td>
+          <%= link_to form_path(xml_form), data: { confirm: 'Are you sure?' }, method: :delete do %>
+            destroy
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
