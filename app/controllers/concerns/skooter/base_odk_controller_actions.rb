@@ -7,6 +7,7 @@ module Skooter
 
     def self.included(base)
       base.before_action :set_header, only: %i[index submissions]
+      base.respond_to :xml
     end
 
     def index
@@ -26,10 +27,11 @@ module Skooter
     end
 
     def submissions
-      if request.method == 'POST'
+      if request.method.eql?('POST')
         # put your logic code here like the below example
         # hash = Crack::XML.parse(File.read(params[:xml_submission_file].path))
         # model = set_model(hash)
+        model = 'nothing_device'
 
         if model != 'device_id'
         #   object = prepare_object(model, hash)
