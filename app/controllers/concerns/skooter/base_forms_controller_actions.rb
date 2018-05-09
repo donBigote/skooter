@@ -29,7 +29,6 @@ module Skooter
 
     # DELETE /forms/1
     def destroy
-      logger.debug "=========> accion delete"
       form.destroy
       redirect_to forms_url, notice: 'Form was successfully destroyed.'
     end
@@ -37,12 +36,10 @@ module Skooter
     private
 
       def forms
-        logger.debug "=========> accion en index"
         @forms ||= Form.all
       end
 
       def form
-        logger.debug "=========> entro al form #{action_name}"
         @form ||= case action_name
                   when 'new'
                     Form.new
