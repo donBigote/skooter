@@ -4,7 +4,7 @@ module Skooter
   ##
   class FormsController < ApplicationController
     include Skooter::BaseFormsControllerActions
-       def destroy
+    def destroy
       logger.debug "=========> accion delete"
       form.destroy
       redirect_to forms_url, notice: 'Form was successfully destroyed.'
