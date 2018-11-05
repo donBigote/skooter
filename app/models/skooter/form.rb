@@ -6,7 +6,7 @@ module Skooter
                       # s3_permissions: :private
 
     validates_attachment_content_type :document,
-                                      content_type: 'application/xml'
+                                      content_type: ['application/xml', 'text/xml']
     validates_attachment_size :document, in: 0..1024.kilobytes
 
     def s3_credentials
