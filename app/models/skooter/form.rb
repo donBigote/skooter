@@ -1,6 +1,12 @@
 module Skooter
   class Form < ApplicationRecord
-    has_attached_file :document # ,
+    has_attached_file :document,
+                      s3_headers: lambda { |attachment|
+                        {
+                          'Content-Type' => 'application/xml',
+                        }
+                      }
+    # has_attached_file :document, # ,
                       # storage: :s3,
                       # s3_credentials: proc { |a| a.instance.s3_credentials },
                       # s3_permissions: :private
@@ -17,5 +23,10 @@ module Skooter
         s3_region: ENV['AWS_REGION']
       }
     end
+
+    def method_name
+
+    end
+
   end
 end
