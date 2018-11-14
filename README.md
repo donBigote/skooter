@@ -23,7 +23,7 @@ Then run:
 rails g skooter:install
 ```
 
-Run the migration:
+Migrate the database:
 ```bash
 rails db:migrate
 ```
@@ -35,12 +35,10 @@ AWS_REGION
 AWS_SECRET_ACCESS_KEY
 SECRET_KEY_BASE
 AWS_ACCESS_KEY_ID
-DOMAIN
-DOMAIN_PORT
 ```
 
 ```bash
-add 'crack' gem to projects gemfile
+you may need to add 'crack' gem to projects gemfile
 ```
 
 
