@@ -1,8 +1,5 @@
 # Skooter
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+Skooter is a gem for connecting ODK Collect forms and a Rails application. This gem helps to automatate the process of collecting data with ODK Collect with a Rails app. Skooter lets you serve and collect data directly from a device using ODK Collect without passing through ODK Aggregate.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -21,8 +18,29 @@ Or install it yourself as:
 $ gem install skooter
 ```
 
-## Contributing
-Contribution directions go here.
+Then run:
+```bash
+rails g skooter:install
+```
+
+Migrate the database:
+```bash
+rails db:migrate
+```
+
+Set environment variables. In the following example we use AWS S3:
+```bash
+S3_BUCKET_NAME
+AWS_REGION
+AWS_SECRET_ACCESS_KEY
+SECRET_KEY_BASE
+AWS_ACCESS_KEY_ID
+```
+
+```bash
+you may need to add 'crack' gem to projects gemfile
+```
+
 
 ## License
 
