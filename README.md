@@ -1,5 +1,5 @@
 # Skooter
-Skooter is a gem for connecting ODK Collect forms and a Rails application. This gem helps to automatate the process of collecting data with ODK Collect with a Rails app. Skooter lets you serve and collect data directly from a device using ODK Collect without passing through another ODK Aggregate.
+Skooter is a gem for connecting ODK Collect forms and a Rails application. This gem helps to automatate the process of collecting data with ODK Collect with a Rails app. Skooter lets you serve and collect data directly from a device using ODK Collect without passing through ODK Aggregate.
 
 ## Installation
 Add this line to your application's Gemfile:
