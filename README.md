@@ -18,6 +18,32 @@ Or install it yourself as:
 $ gem install skooter
 ```
 
+Then run:
+```bash
+rails g skooter:install
+```
+
+Run the migration:
+```bash
+rails db:migrate
+```
+
+Set environment variables. In the following example we use AWS S3:
+```bash
+S3_BUCKET_NAME: ""
+AWS_REGION: ""
+AWS_SECRET_ACCESS_KEY: ""
+SECRET_KEY_BASE: ""
+AWS_ACCESS_KEY_ID: ""
+DOMAIN: ""
+DOMAIN_PORT: ""
+```
+
+```bash
+add 'crack' gem to projects gemfile
+```
+
+
 ## Contributing
 Contribution directions go here.
 
