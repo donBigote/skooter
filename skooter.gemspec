@@ -7,11 +7,11 @@ require 'skooter/version'
 Gem::Specification.new do |s|
   s.name        = 'skooter'
   s.version     = Skooter::VERSION
-  s.authors     = ['Juan Trejo']
-  s.email       = ['juan@dataconsulta.com']
+  s.authors     = ['K&F Consulting']
+  s.email       = ['jefferson@dataconsulta.com']
   s.homepage    = 'https://github.com/KandFConsulting/skooter'
-  s.summary     = 'This engine/gem helps you to automatize process to collect data from ODK Collect using your own server to serve and collect the data directly from de device without pass through another intermediate'
-  s.description = 'Aplicación intermediaria entre ODK y un proyecto rails.'
+  s.summary     = 'This gem helps you to automatate the process of collecting data with ODK Collect using your own server to serve and collect the data directly from a device without passing through another intermediate'
+  s.description = 'A gem for connecting ODK Collect forms and a Rails application.'
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
