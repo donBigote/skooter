@@ -42,9 +42,6 @@ you may need to add 'crack' gem to projects gemfile
 ```
 
 
-## Contributing
-Contribution directions go here.
-
 ## License
 
 MIT License. Copyright 2018 K&F Consulting. http://www.dataconsulta.com
