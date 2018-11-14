@@ -28,14 +28,7 @@ Migrate the database:
 rails db:migrate
 ```
 
-Set environment variables. In the following example we use AWS S3:
-```bash
-S3_BUCKET_NAME
-AWS_REGION
-AWS_SECRET_ACCESS_KEY
-SECRET_KEY_BASE
-AWS_ACCESS_KEY_ID
-```
+Be sure to have cloud storage set up with your environment variables in place.
 
 ```bash
 you may need to add 'crack' gem to projects gemfile
