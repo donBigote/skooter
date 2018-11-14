@@ -30,9 +30,18 @@ rails db:migrate
 
 Be sure to have cloud storage set up with your environment variables in place.
 
+
+You may need to add 'crack' gem to projects gemfile 
 ```bash
-you may need to add 'crack' gem to projects gemfile
+gem 'crack'
 ```
+and then run
+```bash
+bundle install
+```
+
+Navigate to: 
+localhost:3000/skooter/forms
 
 
 ## License
