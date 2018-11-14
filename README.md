@@ -30,13 +30,13 @@ rails db:migrate
 
 Set environment variables. In the following example we use AWS S3:
 ```bash
-S3_BUCKET_NAME: ""
-AWS_REGION: ""
-AWS_SECRET_ACCESS_KEY: ""
-SECRET_KEY_BASE: ""
-AWS_ACCESS_KEY_ID: ""
-DOMAIN: ""
-DOMAIN_PORT: ""
+S3_BUCKET_NAME
+AWS_REGION
+AWS_SECRET_ACCESS_KEY
+SECRET_KEY_BASE
+AWS_ACCESS_KEY_ID
+DOMAIN
+DOMAIN_PORT
 ```
 
 ```bash
