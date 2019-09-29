@@ -46,14 +46,14 @@ module Skooter
                   when 'create'
                     Form.new(form_params)
                   else
-                    logger.debug "accion renderizada: #{action_name}"
+                    logger.debug "action rendered: #{action_name}"
                     Form.find(params[:id])
                   end
       end
 
       # Only allow a trusted parameter "white list" through.
       def form_params
-        params.require(:form).permit(:name, :document, :description, :model_source)
+        params.require(:form).permit(:name, :description, :document)
       end
   end
 end

@@ -12,7 +12,9 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+
 gem 'pg', '~> 0.18'
 gem 'pry-rails', group: [:development, :test]
 gem 'dotenv-rails', groups: [:development, :test]
+
 # gem 'rack-cors', require: "rack/cors"

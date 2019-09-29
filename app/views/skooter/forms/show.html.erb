@@ -4,12 +4,9 @@
   <strong>Name:</strong>
   <%= form.name %>
 </p>
+
 <p>
-  <strong>attached to:</strong>
-  <%= form.model_source %>
-</p>
-<p>
-  <strong>Uploaded file: </strong><%= form.document_file_name %>
+  <strong>Uploaded file: </strong><%#= form.document_file_name %>
 </p>
 <%= link_to 'Edit', edit_form_path(form) %> |
 <%= link_to 'Back', forms_path %>
