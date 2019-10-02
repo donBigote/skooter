@@ -19,11 +19,12 @@ module Skooter
 
     def show
       doc = Skooter::Form.find(params[:id])
-      if SKOOTER_CONFIG['PAPERCLIP_STORAGE'] == :s3 || :S3
-        redirect_to doc.document.expiring_url(10.minutes.to_i)
-      else
-        send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
-      end
+      # if SKOOTER_CONFIG['PAPERCLIP_STORAGE'] == :s3 || :S3
+      #   redirect_to doc.document.expiring_url(10.minutes.to_i)
+      # else
+      #   send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
+      # end
+      send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
     end
 
     def submissions
