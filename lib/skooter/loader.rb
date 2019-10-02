@@ -1,5 +1,2 @@
-# require 'aws-sdk'
-# require 'paperclip'
-# require 'haml-rails'
 require 'simple_form'
 require 'rack/cors'
