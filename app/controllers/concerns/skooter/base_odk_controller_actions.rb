@@ -26,7 +26,8 @@ module Skooter
       # end
 
       # send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
-      url_for(doc.document)
+
+      redirect_to rails_blob_path(doc.document, disposition: "attachment")
     end
 
     def submissions
