@@ -7,10 +7,9 @@
 
 <p>
   <strong>Uploaded file: </strong>
-  <%#= form.document_file_name %>
   
   <% if form.document.attached? %>
-    <%= form.document %>
+    <%= form.document.filename %>
   <% else %>
     No File Attached
   <% end %>
