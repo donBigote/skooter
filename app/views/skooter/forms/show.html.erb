@@ -10,8 +10,7 @@
   <%#= form.document_file_name %>
   
   <% if form.document.attached? %>
-    <%#= form.document %>
-    <%= link_to form.document, target: '_blank' %>
+    <%= form.document %>
   <% else %>
     No File Attached
   <% end %>
