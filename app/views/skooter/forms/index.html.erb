@@ -17,8 +17,7 @@
         <td><%= xml_form.name %></td>
         <td>
           <% if xml_form.document.attached? %>
-            <%#= xml_form.document %>
-            <%= link_to xml_form.document.filename, rails_blob_path(xml_form.document, disposition: 'attachment') %>
+            <%= xml_form.document.filename %>
           <% else %>
             No File Attached
           <% end %>
