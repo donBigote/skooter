@@ -25,8 +25,8 @@ module Skooter
       #   send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
       # end
 
-      send_file doc.document
-      # .path, type: doc.document_content_type, disposition: 'inline'
+      # send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
+      url_for(doc.document)
     end
 
     def submissions
