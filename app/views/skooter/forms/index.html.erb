@@ -17,7 +17,8 @@
         <td><%= xml_form.name %></td>
         <td>
           <% if xml_form.document.attached? %>
-            <%= xml_form.document %>
+            <%#= xml_form.document %>
+            <%= link_to form.document, target: '_blank' %>
           <% else %>
             No File Attached
           <% end %>
