@@ -13,7 +13,8 @@ module Skooter
 
     validates_attachment_content_type :document,
                                       content_type: ['application/xml', 'text/xml']
-    validates_attachment_size :document, in: 0..1024.kilobytes
+    
+    # validates_attachment_size :document, in: 0..1024.kilobytes
 
     def s3_credentials
       {
