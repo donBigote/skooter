@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Skooter
   ##
   module BaseOdkControllerActions
@@ -19,11 +17,7 @@ module Skooter
 
     def show
       doc = Skooter::Form.find(params[:id])
-      if SKOOTER_CONFIG['PAPERCLIP_STORAGE'] == :s3 || :S3
-        redirect_to doc.document.expiring_url(10.minutes.to_i)
-      else
-        send_file doc.document.path, type: doc.document_content_type, disposition: 'inline'
-      end
+      send_data doc.document.download, filename: doc.document.filename.to_s, content_type: doc.document.content_type
     end
 
     def submissions
