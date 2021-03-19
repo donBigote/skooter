@@ -20,12 +20,12 @@ $ gem install skooter
 
 Then run:
 ```bash
-rails g skooter:install
+$ rails g skooter:install
 ```
 
 Migrate the database:
 ```bash
-rails db:migrate
+$ rails db:migrate
 ```
 
 Be sure to have cloud storage set up to work with Active Storage with the appropriate environment variables in place.
@@ -37,7 +37,7 @@ gem 'crack'
 ```
 and then run
 ```bash
-bundle install
+$ bundle install
 ```
 
 Navigate to: 
