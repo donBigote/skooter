@@ -5,7 +5,7 @@ Skooter is a gem for connecting ODK Collect forms to a Rails application. This g
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'skooter'
+gem 'skooter', github: 'KandFConsulting/skooter', branch: 'master'
 ```
 
 And then execute:
