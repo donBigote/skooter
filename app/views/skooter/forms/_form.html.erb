@@ -1,7 +1,14 @@
-<%= simple_form_for form do |f| %>
-  <%= f.input :name %>
-  <%= f.input :description %>
+<%= form_for form do |f| %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
 
-  <%= f.input :document, as: :file, required: true %>
-  <%= f.button :submit %>
+  <%= f.label :description %>
+  <%= f.text_field :description, required: true %>
+
+  <%= f.label :document %>
+  <%= f.file_field :document, required: true %>
+  
+  <%= f.submit "Submit" %>
+
 <% end %>

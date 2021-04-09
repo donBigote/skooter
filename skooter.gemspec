@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   
   s.add_dependency 'rack-cors'
   s.add_dependency 'rails', '>= 6.1.3'
-  s.add_dependency 'simple_form'
   s.add_dependency 'responders'
 
 end
