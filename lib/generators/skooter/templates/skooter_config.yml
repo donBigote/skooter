@@ -1,5 +1,0 @@
-# development:
-#   SKOOTER_MODELS:
-#     - 'foo'
-#     - 'bar'
-#   PAPERCLIP_STORAGE: :filesystem
