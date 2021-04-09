@@ -1,21 +1,19 @@
 # Skooter
 Skooter is a gem for connecting ODK Collect forms to a Rails application. This gem helps to automatate the process of collecting data with ODK Collect with a Rails app. Skooter lets you serve and collect data directly from a device using ODK Collect without passing through ODK Aggregate.
 
+A step by step guide is available at:
+https://github.com/donBigote/skooter/wiki/Create-a-Rails-app-that-uses-Skooter-to-collect-data-with-Open-Data-Kit-Collect
+
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'skooter', github: 'KandFConsulting/skooter', branch: 'master'
+gem 'skooter', github: 'donBigote/skooter', branch: 'master'
 ```
 
 And then execute:
 ```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install skooter
+$ bundle install
 ```
 
 Then run:

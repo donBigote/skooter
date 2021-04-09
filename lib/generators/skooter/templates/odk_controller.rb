@@ -3,7 +3,7 @@ module Skooter
   class OdkController < ApplicationController
     include Skooter::BaseOdkControllerActions
     protect_from_forgery unless: -> { request.format.xml? }
-    before_action :check_auth
+    # before_action :check_auth
 
     def submissions
       puts "controller odk application"
