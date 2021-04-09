@@ -48,10 +48,16 @@ module Skooter
 
 RUBY
       end
+      
       # def copy_initializer_and_config
       #   copy_file 'skooter.rb', 'config/initializers/skooter.rb'
       #   copy_file 'skooter_config.yml', 'config/skooter_config.yml'
       # end
+
+      def copy_odk_controller
+        copy_file 'skooter.rb', 'app/controllers/skooter/odk_controller.rb'
+      end
+
     end
   end
 end

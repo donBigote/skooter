@@ -29,7 +29,7 @@ module Skooter
 
         if model != 'device_id'
         #   object = prepare_object(model, hash)
-        #   form = "Olpe::#{model.singularize.camelize}".constantize.new(object)
+        #   form = "Demo::#{model.singularize.camelize}".constantize.new(object)
         #   respond_to do |format|
         #     if form.save
         #       format.xml { render status: 201 }
