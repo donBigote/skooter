@@ -55,7 +55,7 @@ RUBY
       # end
 
       def copy_odk_controller
-        copy_file 'skooter.rb', 'app/controllers/skooter/odk_controller.rb'
+        copy_file 'odk_controller.rb', 'app/controllers/skooter/odk_controller.rb'
       end
 
     end
