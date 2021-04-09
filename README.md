@@ -5,6 +5,11 @@ A step by step guide is available at:
 
 https://github.com/donBigote/skooter/wiki/Create-a-Rails-app-that-uses-Skooter-to-collect-data-with-Open-Data-Kit-Collect
 
+An example app with Skooter configured is available here:
+
+https://github.com/donBigote/skooter_test
+
+
 ## Installation
 Add this line to your application's Gemfile:
 
