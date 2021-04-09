@@ -1,14 +1,23 @@
 <%= form_for form do |f| %>
   
-  <%= f.label :name %>
-  <%= f.text_field :name, required: true %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true %>
+  </p>
 
-  <%= f.label :description %>
-  <%= f.text_field :description, required: true %>
 
-  <%= f.label :document %>
-  <%= f.file_field :document, required: true %>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_field :description, required: true %>
+  </p>
+
+  <p>
+    <%= f.label :document %>
+    <%= f.file_field :document, required: true %>
+  </p>
   
-  <%= f.submit "Submit" %>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
 
 <% end %>
