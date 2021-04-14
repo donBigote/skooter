@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.version     = Skooter::VERSION
   s.authors     = ['K&F Consulting']
   s.email       = ['jefferson@dataconsulta.com']
-  s.homepage    = 'https://github.com/KandFConsulting/skooter'
-  s.summary     = 'This gem helps you to automatate the process of collecting data with ODK Collect using your own server to serve and collect the data directly from a device without passing through another intermediate'
+  s.homepage    = 'https://github.com/donBigote/skooter'
+  s.summary     = 'This gem helps you to automatate the process of collecting data with ODK Collect using your own server to serve xml forms to ODK Collect and receive data submissions from ODK Collect'
   s.description = 'A gem for connecting ODK Collect forms and a Rails application.'
   s.license     = 'MIT'
 
